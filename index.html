@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching Instagram Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Insta Story Download</h2>
+        <input type="text" id="username" placeholder="Username"><br><br>
+        <button onclick="profile()">View</button><br><br>
+        <hr>
+        <a href="" id="ans"></a>
+    </div>
+
+    <script>
+        let user = document.getElementById('username');
+        let ans = document.getElementById('ans');
+
+        function profile(){
+            ans.href = "https://instagram.com/" + user.value;
+            document.getElementById("ans").innerHTML = "view profile";
+        }
+    </script>
+
+</body>
+</html>
